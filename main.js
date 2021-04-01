@@ -4,7 +4,7 @@ function init() {
     const map= new ol.Map({
         view: new ol.View({
             center: ol.proj.fromLonLat([65.25, 34.25]),
-            zoom:6
+            zoom: 5
         }),
         layers:[
             new ol.layer.Tile({
@@ -17,7 +17,7 @@ function init() {
         source: new ol.source.ImageWMS({
            url: 'https://geonode.wfp.org/geoserver/ows?SERVICE=WMS&',
            params: {
-               LAYERS: 'geonode:afg_wfp_gam_20191112',
+               LAYERS: 'geonode:afg_ica_categories_areas_geonode_20190516',
            }
            })
        
